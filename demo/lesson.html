@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dars — Bilimdon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="lesson-page">
+    <div class="lesson-top">
+      <a class="close" href="learn.html" title="Darsdan chiqish">✕</a>
+      <div class="progress"><div id="bar"></div></div>
+      <span class="stat heart" id="hearts">❤️</span>
+    </div>
+
+    <div class="lesson-body" id="body"></div>
+
+    <footer class="lesson-foot" id="foot">
+      <div class="inner">
+        <div id="feedback"></div>
+        <button class="btn" id="checkBtn" disabled>Tekshirish</button>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/lesson.js"></script>
+</body>
+</html>

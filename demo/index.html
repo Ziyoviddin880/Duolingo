@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilimdon — har kuni 5 daqiqada yangi bilim</title>
+  <meta name="description" content="Bilimdon — o‘yin kabi qiziqarli o‘quv platformasi: qisqa darslar, XP, yuraklar va kunlik seriya. Ingliz tili va web asoslari kurslari bepul.">
+  <meta property="og:title" content="Bilimdon — o‘yin kabi o‘rganing">
+  <meta property="og:description" content="Qisqa darslar, XP va kunlik seriya. Bepul, brauzerda ishlaydi.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%237c4dff'/><text x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>B</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- GEO/SEO: FAQ'ni qidiruv tizimlari va SI-qidiruv tushunishi uchun Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Ro‘yxatdan o‘tish kerakmi?", "acceptedAnswer": { "@type": "Answer", "text": "Yo‘q. Ism va avatar tanlaysiz — shu bilan tamom." } },
+      { "@type": "Question", "name": "Bilimdon pullikmi?", "acceptedAnswer": { "@type": "Answer", "text": "Yo‘q, barcha kurslar bepul." } }
+    ]
+  }
+  </script>
+</head>
+<body class="landing">
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html"><span class="mark">B</span>bilimdon</a>
+      <button class="burger" id="burger" aria-label="Menyu" aria-expanded="false">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#features">Imkoniyatlar</a>
+        <a href="#courses">Kurslar</a>
+        <a href="#how">Qanday ishlaydi</a>
+        <a href="#faq">Savollar</a>
+        <a class="btn" data-start href="start.html">Boshlash</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="container hero">
+      <div>
+        <h1>Har kuni 5 daqiqa — <em>yangi bilim!</em></h1>
+        <p>Bilimdon — o‘yin kabi qiziqarli o‘quv platformasi. Qisqa darslar, XP, yuraklar va kunlik seriya sizni har kuni o‘qishga undaydi.</p>
+        <div class="hero-btns">
+          <a class="btn" data-start="main" href="start.html">Bepul boshlash 🚀</a>
+          <a class="btn btn-ghost" href="#courses">Kurslarni ko‘rish</a>
+        </div>
+        <p class="trust">✓ Ro‘yxatdan o‘tish shart emas &nbsp; ✓ Telefon va kompyuterda</p>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="float f1">🔥 7 kun</div>
+        <div class="float f2">⚡ +10 XP</div>
+        <div class="phone">
+          <div class="phone-top"><span>✕</span><div class="progress"><div style="width:60%"></div></div><span>❤️ 5</span></div>
+          <p class="ex-kind">To‘g‘ri javobni tanlang</p>
+          <h3>“Olma” inglizcha?</h3>
+          <button class="opt demo-opt" data-ok="1">🍎 apple</button>
+          <button class="opt demo-opt">🍌 banana</button>
+          <button class="opt demo-opt">🍊 orange</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== IMKONIYATLAR ===== -->
+    <section class="section" id="features">
+      <div class="container">
+        <h2>Nega Bilimdon?</h2>
+        <p class="sub">O‘qish zerikarli bo‘lishi shart emas</p>
+        <div class="grid-4">
+          <div class="card feature reveal"><div class="icon">⏱️</div><h3>Qisqa darslar</h3><p class="muted">Har bir dars 3–5 daqiqa. Avtobusda ham o‘tsa bo‘ladi.</p></div>
+          <div class="card feature reveal"><div class="icon">🎮</div><h3>O‘yin kabi</h3><p class="muted">XP, darajalar, yuraklar, yutuqlar va kunlik seriya.</p></div>
+          <div class="card feature reveal"><div class="icon">🔊</div><h3>Talaffuz</h3><p class="muted">So‘zlarni tinglang — brauzer o‘zi o‘qib beradi.</p></div>
+          <div class="card feature reveal"><div class="icon">🤖</div><h3>SI yordamida</h3><p class="muted">O‘qituvchi ChatGPT bilan bir necha daqiqada yangi dars tuzadi.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KURSLAR (JS bilan to'ldiriladi) ===== -->
+    <section class="section alt" id="courses">
+      <div class="container">
+        <h2>Kurslar</h2>
+        <p class="sub">Birini tanlang va hoziroq boshlang</p>
+        <div class="grid-3" id="courseList"></div>
+      </div>
+    </section>
+
+    <!-- ===== QANDAY ISHLAYDI ===== -->
+    <section class="section" id="how">
+      <div class="container">
+        <h2>Qanday ishlaydi?</h2>
+        <p class="sub">Uchta oddiy qadam</p>
+        <div class="grid-3 steps">
+          <div class="step reveal"><span class="num">1</span><h3>Ism va avatar</h3><p class="muted">Parol ham, email ham kerak emas.</p></div>
+          <div class="step reveal"><span class="num">2</span><h3>Kurs va maqsad</h3><p class="muted">Kuniga necha XP to‘plashni o‘zingiz tanlaysiz.</p></div>
+          <div class="step reveal"><span class="num">3</span><h3>Har kuni dars</h3><p class="muted">Seriyani uzmang va reytingda yuqoriga chiqing!</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RAQAMLAR ===== -->
+    <section class="band">
+      <div class="container band-grid">
+        <div><b>7</b><span>xil mashq turi</span></div>
+        <div><b>0 so‘m</b><span>butunlay bepul</span></div>
+        <div><b>100%</b><span>brauzerda ishlaydi</span></div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <h2>Ko‘p so‘raladigan savollar</h2>
+        <p class="sub">Javob topmadingizmi? O‘qituvchingizdan so‘rang</p>
+        <details class="reveal"><summary>Ro‘yxatdan o‘tish kerakmi?</summary><p>Yo‘q. Ism va avatar tanlaysiz — shu bilan tamom.</p></details>
+        <details class="reveal"><summary>Ma’lumotlarim qayerda saqlanadi?</summary><p>Faqat sizning brauzeringizda (localStorage). Boshqa kompyuterda progress ko‘rinmaydi.</p></details>
+        <details class="reveal"><summary>Yuraklar nima?</summary><p>Har bir xato 1 yurakni oladi. Yuraklar tugasa, dars to‘xtaydi. Har 30 daqiqada 1 yurak tiklanadi.</p></details>
+        <details class="reveal"><summary>Kunlik seriya qanday hisoblanadi?</summary><p>Har kuni kamida bitta dars o‘tsangiz, seriya 1 ga oshadi. Bir kun o‘tkazib yuborsangiz — noldan boshlanadi.</p></details>
+        <details class="reveal"><summary>O‘qituvchi yangi dars qo‘sha oladimi?</summary><p>Ha! «O‘qituvchi paneli»da ChatGPT yordamida bir necha daqiqada dars tuziladi.</p></details>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="container center">
+        <h2>Bugun boshlang — ertaga rahmat aytasiz 😉</h2>
+        <a class="btn" data-start href="start.html">Bepul boshlash</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <a class="logo" href="index.html"><span class="mark">B</span>bilimdon</a>
+      <p class="muted small">© 2026 Bilimdon — o‘quv loyihasi. HTML, CSS va JavaScript’da, SI yordamida yaratilgan.</p>
+      <a class="muted small" href="admin.html">O‘qituvchi paneli</a>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Yuqoriga">↑</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/landing.js"></script>
+</body>
+</html>
